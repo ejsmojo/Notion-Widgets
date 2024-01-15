@@ -92,7 +92,11 @@
     .discord:hover {
       background-color: #7289da;
     }
-
+    
+    .twitch:hover {
+      background-color: #7289da;
+    }
+    
     .social {
       position: relative;
       margin: 10px;
@@ -154,6 +158,12 @@
       </div>
       <!-- End reddit Icon -->
       
+      <!-- Start twitch Icon -->
+      <div id="twitch" onclick="navigate(this.id)" class="social twitch">
+        <span class="icon"><i class="fa-brands fa-twitch"></i></span>
+      </div>
+      <!-- End twitch Icon -->
+      
       <!-- Start linkedin Icon -->
       <div id="linkedin" onclick="navigate(this.id)" class="social linkedin">
         <span class="icon"><i class="fab fa-linkedin"></i></span>
@@ -176,7 +186,7 @@
         else if (id === "email") {
           window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
         }
-
+          
         else if (id === "facebook") {
           window.open("https://facebook.com/corsair", '_blank').focus(); //Add the url to your facebook page or account
         }
@@ -190,7 +200,7 @@
           window.open("https://twitter.com/corsair", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "reddit") {
-          window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
+          window.open("https://www.reddit.com/r/corsair", '_blank').focus(); //Add the url to your reddit account
         }
         else if (id === "tiktok") {
           window.open("https://www.tiktok.com/@corsair", '_blank').focus(); //Add the url to your tiktok account
@@ -198,12 +208,14 @@
         else if (id === "youtube") {
           window.open("https://www.youtube.com/corsair", '_blank').focus(); //Add the url to your youtube account
         }
+          
         else if (id === "pinterest") {
           window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
         }
+          
         else if (id === "discord") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
         }
